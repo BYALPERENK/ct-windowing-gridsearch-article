@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# data, results and model weights are never committed
+# (anchored to the repository root so that scripts/data and scripts/figures stay tracked)
+/data/
+/results/
+/analysis/
+/figures/
+*.npy
+*.npz
+*.dcm
+*.nii
+*.nii.gz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.txt
+!requirements.txt
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

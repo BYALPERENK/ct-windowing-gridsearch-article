@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctwin"
+version = "0.1.0"
+description = "Code for 'Is the Clinical Brain Window Optimal for AI?': CT windowing grid search for stroke classification on non-contrast CT"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Alperen Kaban" }, { name = "Murat Karakaya" }]
+requires-python = ">=3.10"
+# see requirements.txt for the versions used in the paper
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+    "statsmodels",
+    "matplotlib",
+    "opencv-python",
+    "pydicom",
+    "nibabel",
+    "Pillow",
+    "torch",
+    "torchvision",
+    "timm",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

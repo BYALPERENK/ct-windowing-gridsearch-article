@@ -1,0 +1,17 @@
+# Versions stated in the paper (Sec. 3.5 and 3.6) are pinned; for the other
+# packages the versions used in the original experiments were not recorded.
+# Install the PyTorch build that matches your CUDA version
+# (the experiments used CUDA 13.2), see https://pytorch.org.
+torch==2.13.0
+torchvision==0.28.0
+timm==1.0.28
+scipy==1.13.1
+statsmodels==0.14.2
+numpy
+pandas
+scikit-learn
+opencv-python
+pydicom
+nibabel
+Pillow
+matplotlib
