@@ -1,0 +1,25 @@
+{
+  "title": "Code for: Is the Clinical Brain Window Optimal for AI? A Systematic Grid Search of CT Windowing for Deep-Learning Stroke Classification on Non-Contrast CT",
+  "upload_type": "software",
+  "description": "<p>Code for the paper <em>Is the Clinical Brain Window Optimal for AI? A Systematic Grid Search of CT Windowing for Deep-Learning Stroke Classification on Non-Contrast CT</em> (A. Kaban, M. Karakaya).</p><p>The study trains four architectures (ResNet-50, DenseNet-121, EfficientNet-B0, MobileViTv2-175) on two binary tasks (normal vs. ischemic, normal vs. hemorrhagic) and compares windowed inputs. Experiment A compares raw HU input (split-wide min-max scaling) with the clinical brain window (WW = 80, WC = 40). Experiment B evaluates every window of a 22 x 16 grid (WW 10-220 HU, WC 0-150 HU, steps of 10 HU) against the clinical window. Each configuration is trained with five seeds.</p><p>The repository contains the code for data preparation, training, statistical analysis and figures. No data, result files or model weights are included.</p>",
+  "creators": [
+    {
+      "name": "Kaban, Alperen",
+      "affiliation": "Independent Researcher, Istanbul, Türkiye"
+    },
+    {
+      "name": "Karakaya, Murat",
+      "affiliation": "Department of Software Engineering, TED University, Ankara, Türkiye"
+    }
+  ],
+  "keywords": [
+    "Medical image preprocessing",
+    "Windowing",
+    "Grid search",
+    "Deep learning",
+    "Stroke",
+    "Non-contrast CT"
+  ],
+  "license": "mit",
+  "access_right": "open"
+}
